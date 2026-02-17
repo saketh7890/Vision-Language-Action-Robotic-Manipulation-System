@@ -1,2 +1,17 @@
 # Vision-Language-Action-Robotic-Manipulation-System
-🚀 Project Overview • Excited to share my final project for RAS 545: Robotics & AI Systems at Arizona State University, completed under the guidance of Professor Sangram Redkar.  • I developed an LLM-powered robotic manipulation system that enables a Dobot robotic arm to interpret natural-language commands and autonomously execute multi-step pick-and-place tasks. 🧠 Intelligent Language-to-Action System • Integrated a Groq-hosted Llama 3.3 model to understand prompts such as “pick the farthest red block” or “place the blue block next to the tallest stack.”  • The LLM generates safe, validated Python actions based on a strict manipulation rule set and an AST-secured execution environment.  • The system supports contextual reasoning, allowing references like “that block” or “place it where it was before.” 🎯 Vision & Calibration • Designed a complete OpenCV color-detection pipeline to identify and track blocks on the workspace.  • Applied an affine calibration model to map pixel coordinates to precise Dobot coordinates for reliable manipulation. 📦 Agentic Memory & World Modeling • Built persistent memory to track:  – block positions and identities  – stack heights and configurations  – the current gripper state  – last manipulated block  – command history  • Enables multi-step reasoning and tasks involving stacks, adjacency, and spatial relationships. 🤖 Robotic Execution • Implemented a safe, height-aware pick-and-place controller with suction gripping and smooth motion.  • Ensured deterministic, safe execution through code validation and controlled function whitelisting.
+🚀 Project Overview
+• Excited to share my final project for RAS 545: Robotics & AI Systems at Arizona State University, completed under the guidance of Professor Sangram Redkar.
+• I developed an LLM-powered robotic manipulation system that enables a Dobot robotic arm to interpret natural-language commands and autonomously execute multi-step pick-and-place tasks.
+🧠 Intelligent Language-to-Action System
+• Integrated a Groq-hosted Llama 3.3 model to understand prompts such as “pick the farthest red block” or “place the blue block next to the tallest stack.” 
+• The LLM generates safe, validated Python actions based on a strict manipulation rule set and an AST-secured execution environment.
+• The system supports contextual reasoning, allowing references like “that block” or “place it where it was before.”
+🎯 Vision & Calibration
+• Designed a complete OpenCV color-detection pipeline to identify and track blocks on the workspace.
+• Applied an affine calibration model to map pixel coordinates to precise Dobot coordinates for reliable manipulation. 
+📦 Agentic Memory & World Modeling
+• Built persistent memory to track:  – block positions and identities  – stack heights and configurations  – the current gripper state  – last manipulated block  – command history 
+• Enables multi-step reasoning and tasks involving stacks, adjacency, and spatial relationships. 
+🤖 Robotic Execution
+• Implemented a safe, height-aware pick-and-place controller with suction gripping and smooth motion.
+• Ensured deterministic, safe execution through code validation and controlled function whitelisting.
